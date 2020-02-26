@@ -11,7 +11,7 @@ pool:
 steps:
   - task: WindowsMachineFileCopy@2
     inputs:
-      SourcePath: '''$(Build.SourcesDirectory)'''
+      SourcePath: '''$(System.ArtifactsDirectory)'''
       MachineNames: '40.71.211.64'
       AdminUserName: 'FLDEV'
       AdminPassword: 'S@dev963258741#'
