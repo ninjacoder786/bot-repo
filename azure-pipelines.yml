@@ -1,0 +1,30 @@
+# Starter pipeline
+# Start with a minimal pipeline that you can customize to build and deploy your code.
+# Add steps that build, run tests, deploy, and more:
+# https://aka.ms/yaml
+
+trigger:
+- master
+- task: AzureFileCopy@3
+  inputs:
+    SourcePath: '*'
+    azureSubscription: 'Free Trial(71f43751-0e9a-4788-8472-e792d7df4726)'
+    Destination: 'AzureVMs'
+    storage: 'fldiag327'
+    resourceGroup: 'FLBOT'
+    MachineNames: 'devtlbot1'
+    vmsAdminUserName: 'FLDEV'
+    vmsAdminPassword: 'S@dev963258741#'
+    TargetPath: 'C:\Users\FL-DEV\Documents\Deploy'
+
+pool:
+  vmImage: 'ubuntu-latest'
+
+steps:
+- script: echo Hello, world!
+  displayName: 'Run a one-line script'
+
+- script: |
+    echo Add other tasks to build, test, and deploy your project.
+    echo See https://aka.ms/yaml
+  displayName: 'Run a multi-line script'
