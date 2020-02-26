@@ -5,6 +5,8 @@
 
 trigger:
 - master
+pool:
+  vmImage: 'VS2017-Win2016'
 
 steps:
   - task: AzureFileCopy@3
