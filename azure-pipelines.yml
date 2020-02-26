@@ -15,4 +15,4 @@ steps:
       MachineNames: '40.71.211.64'
       AdminUserName: 'FLDEV'
       AdminPassword: 'S@dev963258741#'
-      TargetPath: 'C:\Users\FLDEV\Documents\test'
+      TargetPath: 'C:\Users\FLDEV\Documents'
