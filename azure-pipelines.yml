@@ -10,7 +10,6 @@ trigger:
     SourcePath: '*'
     azureSubscription: 'Free Trial(71f43751-0e9a-4788-8472-e792d7df4726)'
     Destination: 'AzureVMs'
-    storage: 'fldiag327'
     resourceGroup: 'FLBOT'
     MachineNames: 'devtlbot1'
     vmsAdminUserName: 'FLDEV'
