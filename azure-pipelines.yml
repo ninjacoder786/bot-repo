@@ -10,6 +10,7 @@ steps:
   - task: 'WindowsMachineFileCopy@2'
     inputs:
       SourcePath: '$(Build.SourcesDirectory)'
+      machineNames: devtlbot1
       AdminUserName: 'FLDEV'
       AdminPassword: 'S@dev963258741#'
       TargetPath: 'C:\Users\FL-DEV\Documents\Deploy'
