@@ -1,9 +1,0 @@
-trigger:
-- master
-- task: WindowsMachineFileCopy@2
-  inputs:
-    SourcePath: '$(Build.SourcesDirectory)'
-    azureSubscription: 'Free Trial(71f43751-0e9a-4788-8472-e792d7df4726)'
-    AdminUserName: 'FLDEV'
-    AdminPassword: 'S@dev963258741#'
-    TargetPath: 'C:\Users\FL-DEV\Documents\Deploy'
