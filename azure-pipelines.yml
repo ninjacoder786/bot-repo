@@ -14,9 +14,8 @@ steps:
     SourcePath: '$(Build.Repository.LocalPath)'
     azureSubscription: 'Free Trial(71f43751-0e9a-4788-8472-e792d7df4726)'
     Destination: 'AzureVMs'
-    storage: 'fldiag327'
+    storage: 'flbotstorage'
     resourceGroup: 'FLBOT'
     vmsAdminUserName: 'FLDEV'
-    vmsAdminPassword: 'S%40dev963258741%23'
+    vmsAdminPassword: 'S@dev963258741#'
     TargetPath: '\\devtlbot1\Users\FLDEV\Documents\'
-  
