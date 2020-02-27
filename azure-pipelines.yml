@@ -12,10 +12,10 @@ steps:
 - task: AzureFileCopy@4
   inputs:
     SourcePath: '$(Build.Repository.LocalPath)'
-    azureSubscription: 'Free Trial(71f43751-0e9a-4788-8472-e792d7df4726)'
+    azureSubscription: 'Free Trial(1)(71f43751-0e9a-4788-8472-e792d7df4726)'
     Destination: 'AzureVMs'
     storage: 'flbotstorage'
     resourceGroup: 'FLBOT'
     vmsAdminUserName: 'FLDEV'
     vmsAdminPassword: 'S@dev963258741#'
-    TargetPath: '\\devtlbot1\Users\FLDEV\Documents\'
+    TargetPath: 'C:\Users\FLDEV\Documents'
