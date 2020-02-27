@@ -9,14 +9,11 @@ pool:
   vmImage: 'VS2017-Win2016'
 
 steps:
-- task: AzureFileCopy@4
+- task: WindowsMachineFileCopy@2
   inputs:
     SourcePath: '$(Build.Repository.LocalPath)'
-    azureSubscription: 'Free Trial(1)(71f43751-0e9a-4788-8472-e792d7df4726)'
-    Destination: 'AzureVMs'
-    storage: 'flbotstorage'
-    resourceGroup: 'FLBOT'
-    vmsAdminUserName: 'FLDEV'
-    vmsAdminPassword: 'S@dev963258741#'
-    TargetPath: 'C:\Users\FLDEV\Documents'
+    MachineNames: '13.90.244.30'
+    AdminUserName: 'FLDEV'
+    AdminPassword: 'S@dev963258741#'
+    TargetPath: '\\devtlbot1\Users\FLDEV\Documents'
   
