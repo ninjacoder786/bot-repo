@@ -17,6 +17,6 @@ steps:
     storage: 'fldiag327'
     resourceGroup: 'FLBOT'
     vmsAdminUserName: 'FLDEV'
-    vmsAdminPassword: 'S@dev963258741#'
+    vmsAdminPassword: 'S%40dev963258741%23'
     TargetPath: '\\devtlbot1\Users\FLDEV\Documents\'
   
