@@ -15,5 +15,5 @@ steps:
     MachineNames: '13.90.244.30'
     AdminUserName: 'FLDEV'
     AdminPassword: 'S@dev963258741#'
-    TargetPath: '\\devtlbot1\Users\FLDEV\Documents'
+    TargetPath: 'C:\Users\FLDEV'
   
