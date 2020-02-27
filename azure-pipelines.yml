@@ -9,11 +9,11 @@ pool:
   vmImage: 'VS2017-Win2016'
 
 steps:
-- task: WindowsMachineFileCopy@2
+- task: AzureFileCopy@4
   inputs:
     SourcePath: '$(Build.Repository.LocalPath)'
-    MachineNames: '13.90.244.30'
-    AdminUserName: 'FLDEV'
-    AdminPassword: 'S@dev963258741#'
-    TargetPath: 'C:\Users\FLDEV'
+    azureSubscription: 'Free Trial(1)(71f43751-0e9a-4788-8472-e792d7df4726)'
+    Destination: 'AzureBlob'
+    storage: 'flbotstorage'
+    ContainerName: 'bottestcontainer'
   
