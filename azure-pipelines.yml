@@ -9,11 +9,11 @@ pool:
   vmImage: 'VS2017-Win2016'
 
 steps:
-- task: AzureFileCopy@4
-  inputs:
-    SourcePath: '$(Build.Repository.LocalPath)'
-    azureSubscription: 'Free Trial(1)(71f43751-0e9a-4788-8472-e792d7df4726)'
-    Destination: 'AzureBlob'
-    storage: 'flbotstorage'
-    ContainerName: 'bottestcontainer'
+  - task: AzureFileCopy@4
+    inputs:
+      SourcePath: '$(Build.Repository.LocalPath)'
+      azureSubscription: 'Free Trial(2)(71f43751-0e9a-4788-8472-e792d7df4726)'
+      Destination: 'AzureBlob'
+      storage: 'flbotstorage'
+      ContainerName: 'bottestcontainer'
   
